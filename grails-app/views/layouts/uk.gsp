@@ -48,10 +48,10 @@
     <div class="container">
       <div class="global-search">
         <div class="global-search-box">
-          <g:form controller="species" action="search">
-            <input type="text" name="q" placeholder="Search everything..." value="${params.q}">
+          <form action="${grailsApplication.config.bie.baseUrl}${grailsApplication.config.bie.searchPath}" method="get">
+            <input type="text" name="q" placeholder="Search everything..." value="">
             <input type="submit" value="Search">
-          </g:form>
+          </form>
         </div>
       </div>
       <div class="navbar">
@@ -60,11 +60,11 @@
             <div class="mobile-nav-button hidden-desktop" data-toggle="collapse" data-target=".nav-collapse"></div>
             <nav class="nav-collapse collapse">
               <ul class="nav">
-                <li><g:link controller="species" action="search">Species</g:link></li>
-                <li><a href="${grailsApplication.config.biocache.baseURL}/explore/your-area?default=true">Locations</a></li>
+                <li><a href="${grailsApplication.config.bie.baseUrl}${grailsApplication.config.bie.searchPath}">Species</a></li>
+                <li><a href="${grailsApplication.config.grails.serverURL}/explore/your-area?default=true">Locations</a></li>
                 <li><a href="#">Habitats</a></li>
-                <li><a href="${grailsApplication.config.biocache.baseURL}/search">Records</a></li>
-                <li><a href="${grailsApplication.config.collectory.baseURL}/datasets">Data Providers</a></li>
+                <li><a href="${grailsApplication.config.grails.serverURL}/search">Records</a></li>
+                <li><a href="${grailsApplication.config.collections.baseUrl}/datasets">Data Providers</a></li>
                 <li class="hidden-desktop"><a href="#">Getting Started</a></li>
                 <li class="hidden-desktop"><a href="#">Examples of Use</a></li>
                 <li class="hidden-desktop"><a href="#">Documentation</a></li>
@@ -89,11 +89,11 @@
     <div class="footer-row-1 container">
       <nav class="footer-nav-1">
         <ul>
-          <li><a href="http://ala-demo.gbif.org/bie-webapp2/search">Species</a></li>
-          <li><a href="http://ala-demo.gbif.org/generic-hub/explore/your-area?default=true">Locations</a></li>
+          <li><a href="${grailsApplication.config.bie.baseUrl}${grailsApplication.config.bie.searchPath}">Species</a></li>
+          <li><a href="${grailsApplication.config.grails.serverURL}/explore/your-area?default=true">Locations</a></li>
           <li><a href="#">Habitats</a></li>
-          <li><a href="http://ala-demo.gbif.org/generic-hub/search">Records</a></li>
-          <li><a href="#">Data Providers</a></li>
+          <li><a href="${grailsApplication.config.grails.serverURL}/search">Records</a></li>
+          <li><a href="${grailsApplication.config.collections.baseUrl}/datasets">Data Providers</a></li>
         </ul>
       </nav>
       <nav class="footer-nav-2">
