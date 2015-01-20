@@ -4,17 +4,25 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>UK Wildlife Portal</title>
-
-  <r:require modules="bootstrap2, hubCore"/>
+  <title><g:layoutTitle /></title>
 
   <style>
-  #page-header .inner { display: none;}
-  .inner-search-form { display: none;}
+  #page-header .inner { display: none; }
+  .inner-search-form { display: none; }
   </style>
 
+  <r:require modules="bootstrap2, hubCore, uk"/>
   <r:layoutResources/>
   <g:layoutHead />
+
+  <!-- Robins imports -->
+  <script src="http://use.typekit.net/whd1tbp.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <script src="http://www.cerulean.co.nz/atlas/js/uk-wildlife.js"></script>
+  <!-- end of Robins imports -->
+  <!--[if lt IE 9]>
+  <script src="bootstrap/js/html5shiv.js"></script>
+  <![endif]-->
 </head>
 
 <body>
@@ -131,16 +139,5 @@
 </footer>
 <!-- end global footer -->
 <r:layoutResources/>
-
-<!-- Robins imports -->
-<link href="http://www.cerulean.co.nz/atlas/css/uk-wildlife.css" rel="stylesheet">
-<script src="http://use.typekit.net/whd1tbp.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
-<script src="http://www.cerulean.co.nz/atlas/js/uk-wildlife.js"></script>
-<!-- end of Robins imports -->
-
-<!--[if lt IE 9]>
-	<script src="bootstrap/js/html5shiv.js"></script>
-    <![endif]-->
 </body>
 </html>

@@ -10,4 +10,7 @@ modules = {
         resource url: [dir:'css', file:'generic.css']
     }
 
+    uk {
+        resource url: 'http://www.cerulean.co.nz/atlas/css/uk-wildlife.css'
+    }
 }
