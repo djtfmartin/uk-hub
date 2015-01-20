@@ -25,7 +25,7 @@
   <![endif]-->
 </head>
 
-<body>
+<body class="${pageProperty(name:'body.class')?:''}" id="${pageProperty(name:'body.id')}" onload="${pageProperty(name:'body.onload')}">
 <div class="wrap">
   <!-- start global header -->
   <div class="switcher-bar">
