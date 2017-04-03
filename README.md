@@ -1,4 +1,4 @@
-### generic-hub   [![Build Status](https://travis-ci.org/GBIFes/generic-hub-es.svg?branch=master)](https://travis-ci.org/gbifes/generic-hub-es)
+### generic-hub   [![Build Status](https://travis-ci.org/GBIFes/generic-hub-es.svg?branch=master)](https://travis-ci.org/GBIFes/generic-hub-es)
 # generic-hub
 
 Generic-hub is a [Grails](http://www.grails.org/) web application that is aimed to be an example implementation of the 
